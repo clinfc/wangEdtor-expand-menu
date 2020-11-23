@@ -1,7 +1,10 @@
-import wangEditor from "wangeditor"
+import "~/assets/icon/index.css"
 
-import "assets/sass/index.scss"
+import registerSupMenu from "./sup"
+import registerFontColorMenu from "./font-color"
 
-const editor = new wangEditor("#div1")
-
-editor.create()
+// 向外暴露注册菜单的接口
+export default function registerMenu(e) {
+    registerSupMenu(e)
+    registerFontColorMenu(e)
+}

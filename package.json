@@ -1,11 +1,12 @@
 {
-  "name": "extension-js",
+  "name": "we-expand-menus",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack"
+    "hot": "cross-env NODE_ENV=hot webpack-dev-server --config webpack/hot.js",
+    "dev": "cross-env NODE_ENV=development webpack --watch --config webpack/dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/build.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,8 @@
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "wangeditor": "^4.5.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
