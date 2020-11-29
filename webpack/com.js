@@ -94,6 +94,7 @@ const NOT_HOT = {
         weExpandMenu: path.join(PATH.SRC, "index.js"),
         weSupMenu: path.join(PATH.SRC, "sup/index.js"),
         weFontColorMenu: path.join(PATH.SRC, "font-color/index.js"),
+        weLink: path.join(PATH.SRC, "link/index.js"),
     },
     externals: {
         wangeditor: "wangEditor",

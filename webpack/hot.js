@@ -22,7 +22,7 @@ const HOT = {
         open: true,
         hot: true,
         // 即使热替换未生效，浏览器也不自动刷新
-        hotOnly: true,
+        hotOnly: false,
     },
     plugins: [
         new HtmpWebpackPlugin({
