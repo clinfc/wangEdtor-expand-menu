@@ -12,15 +12,17 @@
 
 ```
 npm install
-npm install wangeditor
 ```
 
 ### 第三步：编译
 
 ```
-// 开发环境
+// 开发环境（直接预览）
+npm run hot
+
+// 开发环境（生成 .js 文件）
 npm run dev
 
-// 生产环境
+// 生产环境（生成 .min.js 文件）
 npm run build
 ```
