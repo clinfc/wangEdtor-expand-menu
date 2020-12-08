@@ -94,7 +94,11 @@ const NOT_HOT = {
         registerExpandMenu: path.join(PATH.SRC, "index.js"),
     },
     externals: {
-        wangeditor: "wangEditor",
+        wangeditor: {
+            root: "wangEditor",
+            commonjs: 'wangeditor',
+            commonjs2: 'wangeditor'
+        },
     },
 }
 
